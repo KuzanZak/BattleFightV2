@@ -1,0 +1,126 @@
+:root {
+    /* Sizes */
+    font-size: 12px;
+    --container-width: 1350px;
+
+    /* Colors */
+    --primary-color: #fb9179;
+    --secondary-color: #bdbf09;
+    --main-bg: #151617;
+    --dark-grey: #313335;
+    --dark-grey-transparent: rgba(49, 51, 53, 0.7);
+    --light-grey: #7a8085;
+
+    /* Special colors */
+    --transparent-white: rgba(255, 255, 255, 0.5);
+    --transparent-black: rgba(0, 0, 0, .5);
+    --transparent-black75: rgba(0, 0, 0, .75);
+
+    /* Social colors */
+    --facebook-color: #3b5998;
+    --twitter-color: #55acee;
+    --instagram-color: #ac2bac;
+
+    /* Transistion */
+    --transition-duration: .5s;
+    --transition-function: ease;
+}
+
+/* NORMALIZER */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* UTILITIES */ 
+.template{
+    background-color: black;
+    color: white;
+}
+
+/* HEADER */
+.header{
+    background-color: green;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.header-ttl{
+    text-align: center;
+    border: .3rem solid white;
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+/* MAIN */ 
+.selection{
+    border: 2px solid white;
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    height: 100%;
+}
+
+.pool{
+    background-color: #B6C759; 
+    grid-row-start: 1;
+    grid-column-start: 6;
+
+    grid-row-end: 5;
+    grid-column-end: 10;
+
+    
+    /* border: 2px solid red;
+    padding-top: 1rem;
+    padding-left: 6rem;
+    padding-top: 1rem; */
+}
+
+.name-fighter{
+    
+}
+
+.image-figther{
+    width: 60%;
+    border: 1px solid white;
+}
